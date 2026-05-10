@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skandināvijas Ceļvedis | Projekts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigācija -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">Ziemeļvalstis</div>
+            <ul class="nav-links">
+                <li><a href="#home">Sākums</a></li>
+                <li><a href="#about">Par reģionu</a></li>
+                <li><a href="#gallery">Galerija</a></li>
+                <li><a href="#contact">Kontakti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 1. SADAĻA: Sākums -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Skandināvijas burvība</h1>
+            <p>Iepazīsti dabu, kultūru un ziemeļu mieru.</p>
+            <a href="#about" class="btn">Uzzināt vairāk</a>
+        </div>
+    </section>
+
+    <!-- 2. SADAĻA: Apraksts -->
+    <section id="about" class="container">
+        <h2 class="section-title">Par Skandināvijas valstīm</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Norvēģija</h3>
+                <p>Slavenāko fjordu mājvieta. Valsts, kur kalni satiekas ar jūru. Ideāls galamērķis dabas mīļotājiem.</p>
+            </div>
+            <div class="about-card">
+                <h3>Zviedrija</h3>
+                <p>Inovāciju un dizaina zeme. No Stokholmas arhipelāga līdz Lapzemes ziemeļblāzmām.</p>
+            </div>
+            <div class="about-card">
+                <h3>Dānija</h3>
+                <p>Hygge dzīvesstila dzimtene. Līdzenas ainavas, vēsturiski ciemati un moderna arhitektūra.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SADAĻA: 4 Pilsētu galerija -->
+    <section id="gallery" class="container">
+        <h2 class="section-title">Lielākās pilsētas</h2>
+        <div class="gallery-grid">
+            <!-- Oslo -->
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8CaVnj_DZkTWqKfwbbr9TMRfiH83YrvlKxA&ssauto=compress&cs=tinysrgb&w=800"
+class="gallery-img">
+                <p>Oslo</p>
+            </div>
+            <!-- Stokholma -->
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI-R569Ybqn7E8WmbXK_m03cJAZgeO7XQ0nQ&sauto=compress&cs=tinysrgb&w=800" class="gallery-img">
+                <p>Stokholma</p>
+               </div>
+            <!-- Helsinki -->
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW-pqhTF5_WzYT-kXxN7LUn7uPW66FNKqi6g&sauto=compress&cs=tinysrgb&w=800" class="gallery-img">
+                <p>Helsinki</p>
+              </div>
+            <!-- Kopenhagen -->
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9xFzq3v6FaFl5SoAx-seKVkmOP57x662X5Q&sauto=compress&cs=tinysrgb&w=800" class="gallery-img">
+                <p>Kopenhagen</p>
+               </div>
+
+    <!-- 4. SADAĻA: Forma -->
+    <section id="contact" class="container bg-light">
+        <h2 class="section-title">Sazinies ar mums</h2>
+        <div class="form-wrapper">
+            <form id="travelForm">
+                <div class="form-control">
+                    <label for="username">Vārds, Uzvārds</label>
+                    <input type="text" id="username" placeholder="Ievadiet vārdu..." required>
+                </div>
+                <div class="form-control">
+                    <label for="useremail">E-pasts</label>
+                    <input type="email" id="useremail" placeholder="piemers@pasts.lv" required>
+                </div>
+                <div class="form-control">
+                    <label for="interest">Kura valsts Tevi interesē?</label>
+                    <select id="interest">
+                        <option value="Norvēģiju">Norvēģija</option>
+                        <option value="Zviedriju">Zviedrija</option>
+                        <option value="Dāniju">Dānija</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label>Vai vēlies saņemt jaunumus?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="news" value="Jā" checked> Jā
+                        <input type="radio" name="news" value="Nē"> Nē
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Sūtīt pieteikumu</button>
+            </form>
+            <!-- Šeit parādīsies JS apstrādātie dati -->
+            <div id="resultArea" class="hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Skandināvijas Projekts | Autors: [Tavs Vārds]</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
